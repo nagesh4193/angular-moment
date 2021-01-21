@@ -10,7 +10,7 @@ arch:
   - amd64
   - ppc64le
 
-before_script:
+script:
   - npm install phantomjs-prebuilt@2.1.16 --ignore-scripts
 
 after_success:
