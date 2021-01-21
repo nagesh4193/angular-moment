@@ -11,7 +11,7 @@ arch:
   - ppc64le
 
 before_script:
-  - npm run bower
+  - npm install phantomjs-prebuilt@2.1.16 --ignore-scripts
 
 after_success:
   - cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
